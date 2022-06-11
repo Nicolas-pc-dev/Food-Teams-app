@@ -1,13 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "Montserrat", sans-serif;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+#c1 {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1253%26quot%3b)' fill='none'%3e%3cpath d='M -648.7007679648012%2c186 C -552.7%2c240.2 -360.7%2c451 -168.70076796480123%2c457 C 23.3%2c463 119.3%2c241 311.29923203519877%2c216 C 503.3%2c191 599.3%2c335.4 791.2992320351988%2c332 C 983.3%2c328.6 1141.56%2c181 1271.2992320351987%2c199 C 1401.04%2c217 1406.26%2c377.4 1440%2c422' stroke='rgba(113%2c 166%2c 52%2c 1)' stroke-width='2'%3e%3c/path%3e%3cpath d='M -387.90846550452915%2c116 C -291.91%2c170 -99.91%2c354 92.09153449547085%2c386 C 284.09%2c418 380.09%2c276.6 572.0915344954708%2c276 C 764.09%2c275.4 860.09%2c402.4 1052.0915344954708%2c383 C 1244.09%2c363.6 1454.51%2c196.6 1532.0915344954708%2c179 C 1609.67%2c161.4 1458.42%2c271.8 1440%2c295' stroke='rgba(113%2c 166%2c 52%2c 1)' stroke-width='2'%3e%3c/path%3e%3cpath d='M -520.1144884637993%2c362 C -424.11%2c315.8 -232.11%2c117.8 -40.11448846379924%2c131 C 151.89%2c144.2 247.89%2c418.6 439.88551153620074%2c428 C 631.89%2c437.4 727.89%2c200.2 919.8855115362007%2c178 C 1111.89%2c155.8 1295.86%2c299.4 1399.8855115362007%2c317 C 1503.91%2c334.6 1431.98%2c276.2 1440%2c266' stroke='rgba(113%2c 166%2c 52%2c 1)' stroke-width='2'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1253'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+}
+
+.bump {
+  animation: bump 300ms ease-out;
+}
+
+@keyframes bump {
+  0% {
+    transform: scale(1);
+  }
+  10% {
+    transform: scale(0.9);
+  }
+  30% {
+    transform: scale(1.1);
+  }
+  50% {
+    transform: scale(1.15);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.active {
+  color: #79a93b;
+  transform: scale(1.1);
+  font-weight: bold;
+}
+
+.blue {
+  background: red;
 }
