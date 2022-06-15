@@ -7,7 +7,7 @@ const Wrapper = styled.div`
   position: relative;
 
   h3 {
-    font-size: 5rem;
+    font-size: 3.5rem;
     margin-bottom: 5rem;
     color: #79a93b;
 
@@ -22,7 +22,7 @@ const Wrapper = styled.div`
     }
   }
   span {
-    font-size: 5rem;
+    font-size: 3.5rem;
     color: #414141;
   }
 `;

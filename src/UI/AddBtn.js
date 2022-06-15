@@ -1,18 +1,19 @@
 import styled from "styled-components";
 
 const AddBtn = styled.button`
+  position: absolute;
   z-index: 50;
-  width: 5rem;
+  bottom: 2rem;
+  left: 50rem;
   height: 5rem;
   padding: 3rem;
-  margin-right: 1rem;
-  border-radius: 4rem;
+  border-radius: 1rem;
   border: none;
   cursor: pointer;
   background: linear-gradient(to right, #82bd3c, #65932f);
   color: #fff;
   font-weight: 600;
-  font-size: 3rem;
+  font-size: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -20,7 +21,6 @@ const AddBtn = styled.button`
 
   &:hover {
     transform: scale(1.1);
-    font-size: 3.2rem;
     background: linear-gradient(180deg, #82bd3c, #75bc20);
   }
 `;

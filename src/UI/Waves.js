@@ -4,10 +4,10 @@ const Waves = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="1665"
+      width="1250"
       height="150"
       preserveAspectRatio="none"
-      viewBox="0 0 1500 150"
+      viewBox="0 -20 1500 180"
     >
       <g fill="none" strokeWidth="2" mask='url("#SvgjsMask1357")'>
         <path

@@ -3,29 +3,25 @@ import React, { useContext } from "react";
 import FavoriteRecContext from "../../store/favorite-context";
 // Splide
 import { SplideSlide } from "@splidejs/react-splide";
+// Routing
+import { useNavigate } from "react-router-dom";
 // Styles
 import ImgCard from "../../UI/ImgCard";
 import Gradient from "../../UI/Gradient";
-import AddBtn from "../../UI/AddBtn";
 // ----------------------------------------------------------------
 
 const FavoriteRecipe = (props) => {
-  const FavoriteCtx = useContext(FavoriteRecContext);
+  const navigate = useNavigate();
 
-  const removeRecipeHandler = () => {
-    FavoriteCtx.removeRecipe({
-      id: props.id,
-    });
+  const navigateHandler = () => {
+    navigate(`/recipeInformation/${props.id}`);
   };
 
   return (
     <>
       <SplideSlide key={props.id}>
-        <ImgCard>
-          <p>
-            <AddBtn onClick={removeRecipeHandler}>-</AddBtn>
-            {props.title}
-          </p>
+        <ImgCard onClick={navigateHandler}>
+          <p>{props.title}</p>
           <img src={props.image} alt={props.title}></img>
           <Gradient />
         </ImgCard>

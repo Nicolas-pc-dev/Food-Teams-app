@@ -7,7 +7,7 @@ function Vector() {
       width="568"
       height="663"
       fill="none"
-      viewBox="0 0 568 663"
+      viewBox="0 45 568 663"
     >
       <g filter="url(#filter0_i_1_27)">
         <path

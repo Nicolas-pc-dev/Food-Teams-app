@@ -15,11 +15,14 @@ const MainHeader = styled.header`
 
   svg {
     color: #79a93b;
-    font-size: 5rem;
+    font-size: 4rem;
+    position: absolute;
+    left: 9.5rem;
+    top: 1.7rem;
   }
 
   h1 {
-    font-size: 4rem;
+    font-size: 3rem;
     color: #79a93b;
   }
 
@@ -31,7 +34,7 @@ const MainHeader = styled.header`
   }
 
   span {
-    font-size: 2.5rem;
+    font-size: 1.8rem;
     margin-left: 1rem;
   }
 `;

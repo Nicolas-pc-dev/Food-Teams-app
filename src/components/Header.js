@@ -47,10 +47,12 @@ const Header = () => {
   // JSX
   return (
     <MainHeader>
-      <GiThreeLeaves />
-      <h1>Veggie & Healthy</h1>
+      <h1>
+        <GiThreeLeaves />
+        Veggie & Healthy
+      </h1>
       <div>
-        <SNavLink activeClassName="active" to="/">
+        <SNavLink activeClassName="active" to="/home">
           <p>Home</p>
         </SNavLink>
         <SNavLink activeClassName="active" to="/recipes">
@@ -70,8 +72,9 @@ const Header = () => {
 };
 
 const SNavLink = styled(NavLink)`
-  font-size: 3.5rem;
-  margin-left: 10rem;
+  font-size: 2.8rem;
+  width: 10rem;
+  margin-left: 5rem;
   text-decoration: none;
   color: #79a93b;
 

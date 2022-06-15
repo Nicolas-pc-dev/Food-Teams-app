@@ -1,6 +1,7 @@
 // REDUCER DEFAULT STATE
 const defaultRecipeState = {
   recipes: [],
+  showButton: true,
 };
 
 const types = {
@@ -12,37 +13,21 @@ const types = {
 const recipesReducer = (state, action) => {
   switch (action.type) {
     case types.addRecipe:
+      if (state.recipes.some((recipe) => recipe.id === action.recipe.id)) {
+        return { ...state, showButton: false };
+      }
       const updateFavoritesRecipes = state.recipes.concat(action.recipe);
-      return { recipes: updateFavoritesRecipes };
+      return { ...state, recipes: updateFavoritesRecipes, recipeExist: true };
 
     case types.removeRecipe:
       const FilteredRecipes = state.recipes.filter(
         (recipe) => recipe.id !== action.id.id
       );
-      return { recipes: FilteredRecipes };
+      return { ...state, recipes: FilteredRecipes };
     default:
       return defaultRecipeState;
   }
 };
-//   if (action.type === "ADD_RECIPE") {
-//     if (state.recipes.somre((recipe) => recipe.id === action.recipe.id)) {
-//       return { ...state };
-//     } else {
-//       const updateFavoritesRecipes = state.recipes.concat(action.recipe);
-//       return {
-//         recipes: updateFavoritesRecipes,
-//       };
-//     }
-//   }
-//   if (action.type === "REMOVE_RECIPE") {
-//     const FilteredRecipes = state.recipes.filter(
-//       (recipe) => recipe.id !== action.id.id
-//     );
-
-//     return { recipes: FilteredRecipes };
-//   }
-//   return defaultRecipeState;
-// };
 
 export { defaultRecipeState, types };
 export default recipesReducer;

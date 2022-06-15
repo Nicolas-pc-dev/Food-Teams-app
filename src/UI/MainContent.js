@@ -6,10 +6,11 @@ const MainContent = styled.section`
   height: 87vh;
   display: flex;
   position: relative;
+  overflow: hidden;
 
   img {
     position: absolute;
-    height: 700px;
+    height: 520px;
     margin-top: 25px;
     right: 0;
     transform: rotate(30%);
@@ -21,21 +22,21 @@ const MainContent = styled.section`
     h1 {
       position: absolute;
       letter-spacing: 0.15rem;
-      font-size: 8rem;
+      font-size: 6rem;
       color: #474747;
       position: absolute;
       top: 25%;
       left: 10%;
       span {
-        font-size: 8rem;
+        font-size: 6rem;
         color: #79a93b;
       }
     }
     p {
-      font-size: 2.5rem;
+      font-size: 1.8rem;
       position: absolute;
       letter-spacing: 0.15rem;
-      top: 58%;
+      top: 55%;
       left: 10%;
     }
   }
